@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BazaLicznikiModelStoreContainer" CdmEntityContainer="BazaLicznikiEntities">
+    <EntitySetMapping Name="Klienci">
+      <EntityTypeMapping TypeName="BazaLicznikiModel.Klienci">
+        <MappingFragment StoreEntitySet="Klienci">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="imie" ColumnName="imie" />
+          <ScalarProperty Name="nazwisko" ColumnName="nazwisko" />
+          <ScalarProperty Name="ulica" ColumnName="ulica" />
+          <ScalarProperty Name="nume_budynku" ColumnName="nume_budynku" />
+          <ScalarProperty Name="miejscowosc" ColumnName="miejscowosc" />
+          <ScalarProperty Name="kod_pocztowy" ColumnName="kod_pocztowy" />
+          <ScalarProperty Name="liczniki_id" ColumnName="liczniki_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Liczniki">
+      <EntityTypeMapping TypeName="BazaLicznikiModel.Liczniki">
+        <MappingFragment StoreEntitySet="Liczniki">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numer" ColumnName="numer" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="producent" ColumnName="producent" />
+          <ScalarProperty Name="stan" ColumnName="stan" />
+          <ScalarProperty Name="taryfa" ColumnName="taryfa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
